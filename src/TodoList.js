@@ -10,7 +10,7 @@ const TodoList = ({todos}) => {
     //<div>{todos}</div>
     //map関数は配列の要素を一つずつ取り出して処理を行う関数
     //keyは一意の値を入れる,keyは
-    todos.map((todo) => <Todo todo={todo} key={todo}/>)
+    todos.map((todo) => <Todo todo={todo} key={todo.name}/>)
   )
 }
 
